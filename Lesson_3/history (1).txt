@@ -1,0 +1,53 @@
+   0 mkdir /tmp/user
+   1 ls
+   2 cat readme.txt
+   3 cat bench.py
+   4 mkdir /user/tmp
+   5 date
+   6 cat /etc/group
+   7 cat /etc/group | wc
+   8 cat /etc/group | wc -1
+   9 cat /etc/group | wc -l
+  10 ls -l
+  11 cat /etc/group | head
+  12 cat /etc/group | head -5
+  13 cat /etc/group | head -3
+  14 cat /etc/group | tail -3
+  15 cat /etc/group | tail -2
+  16 cat /etc/group | grep video
+  17 cat /etc/group | grep -w video
+  18 cat /etc/os-release
+  19 cat /etc/os-release | grep NAME
+  20 cat /etc/os-release | grep -w NAME
+  21 cat /etc/group | tail -15
+  22 cat /etc/group | tail -15 | head -2
+  23 cat /etc/group | tail -15 | head -2 | grep users
+  24 clear
+  25 touch 1 2 3 4 5
+  26 history
+  27 history | tail -5
+  28 history | tail -5 > /tmp/file.txt
+  29 cat /tmp/file.txt
+  30  date > /tmp/file.txt
+  31 cat /tmp/file.txt
+  32 cat /etc/group | tail -15 | head -2 >> /tmp/file.txt
+  33 cat /etc/group
+  34 cat /tmp/file.txt
+  35 df
+  36 df -f
+  37 df -h
+  38 df -h | tail -2
+  39 df -h | head -2
+  40 df -h | grep root
+  41 df -h
+  42 df -h | head -1
+  43 df -h | head -2
+  44 df -h | grep /
+  45 df -h | grep -w /
+  46 df -h | awk '{print$5}'
+  47 df -h | grep -w / | awk '{print$5}'
+  48 df -h | grep -w 47% | awk '{print$5}' | sed 's/%//g'
+  49 df -h | grep -w 47% | awk '{print$5}' | sed 's/%//'
+  50 df -h | grep -w 47% | awk '{print$5}' | sed 's/%//' >> /tmp/file.txt
+  51 cat /tmp/file.txt
+  52 history > /tmp/history.txt
